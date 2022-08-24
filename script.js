@@ -1,18 +1,18 @@
 // Calculo gasolina vs alcool
-function gasOuAlc(consumoAlcool, consumoGasolina, valorAlcool, valorGasolina, valorAbastecer) {
-    var consumoAlcool = Number(document.getElementById('consumoAlcool').value);
-    var consumoGasolina = Number(document.getElementById('consumoGasolina').value);
-    var valorAlcool = Number(document.getElementById('valorAlcool').value);
-    var valorGasolina = Number(document.getElementById('valorGasolina').value);
-    var valorAbastecer = Number(document.getElementById('valorAbastecer').value); 
+function gasOuAlc() {
+    let consumoAlcool = Number(document.getElementById('consumoAlcool').value);
+    let consumoGasolina = Number(document.getElementById('consumoGasolina').value);
+    let valorAlcool = Number(document.getElementById('valorAlcool').value);
+    let valorGasolina = Number(document.getElementById('valorGasolina').value);
+    let valorAbastecer = Number(document.getElementById('valorAbastecer').value); 
     var abastecerResultado = "test";
 
-    var litrosAlcool = Number(valorAbastecer) / Number(valorAlcool);
-    var litrosGasolina = Number(valorAbastecer) / Number(valorGasolina);
+    let litrosAlcool = Number(valorAbastecer) / Number(valorAlcool);
+    let litrosGasolina = Number(valorAbastecer) / Number(valorGasolina);
     console.log(`com R$${valorAbastecer} você abastece ${litrosAlcool.toFixed(2)} litros de alcool e ${litrosGasolina.toFixed(2)} litros de gasolina.`);
 
-    var rodagemAlcool = litrosAlcool * Number(consumoAlcool);
-    var rodagemGasolina = litrosGasolina * Number(consumoGasolina);
+    let rodagemAlcool = litrosAlcool * Number(consumoAlcool);
+    let rodagemGasolina = litrosGasolina * Number(consumoGasolina);
     if (rodagemAlcool > rodagemGasolina){
     console.log(`Alcool está valendo mais! você roda ${rodagemAlcool.toFixed(2)}km no alcool e ${rodagemGasolina.toFixed(2)}km rodando na gasolina!`);
     abastecerResultado = `Alcool está valendo mais! você roda ${rodagemAlcool.toFixed(2)}km no alcool e ${rodagemGasolina.toFixed(2)}km rodando na gasolina!`;
@@ -23,3 +23,23 @@ function gasOuAlc(consumoAlcool, consumoGasolina, valorAlcool, valorGasolina, va
     document.getElementById('consumoResultado').innerHTML = abastecerResultado;
 }
 }
+
+// Calculadora de Juros composto
+
+function juroscompcalc() {
+    let valorInicial = +prompt("Entre o valor a ser investido:");
+    let rendimento = +prompt("Entre o valor em porcentagem de rendimento por período") / 100 + 1;
+    let aporte = +prompt("Entre o aporte:");
+    let periodo = +prompt("Entre o número de períodos:")
+    let valorFinal = 0;
+    let i = 1
+
+    valorFinal = Number(valorInicial * rendimento + aporte);
+    console.log(`Após 1 período o valor é de R$${valorFinal}`);
+
+    while (i < periodo){
+    ++i;
+    valorFinal = Number(valorFinal * rendimento + aporte);
+    console.log(`Após ${i} períodos o valor é de R$${valorFinal.toFixed(2)}`);
+
+    }}
