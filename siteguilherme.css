@@ -1,6 +1,9 @@
 body {background-color: rgb(255, 240, 173);
     font-family: 'IBM Plex Mono', monospace;
 }
+a {
+    text-decoration: none;
+}
 #presentation {
     width: 1000px;
     height: 400px;
@@ -17,3 +20,6 @@ body {background-color: rgb(255, 240, 173);
     height: 400px;
     box-sizing: border-box;
 }
+#jurosResultado{
+    overflow: 30px scroll;
+} /* TESTANDO LISTA COM SCROLL */

@@ -25,16 +25,17 @@ function gasOuAlc() {
     document.getElementById('consumoResultado').innerHTML = abastecerResultado;
 }
 }
-
+/////////////////////////////////////////////////////////////////////////////////
 // Calculadora de Juros composto
 
 function juroscompcalc() {
-    let valorInicial = +prompt("Entre o valor a ser investido:");
-    let rendimento = +prompt("Entre o valor em porcentagem de rendimento por período") / 100 + 1;
-    let aporte = +prompt("Entre o aporte:");
-    let periodo = +prompt("Entre o número de períodos:")
+    let valorInicial =  Number(document.getElementById('valorInicial').value);
+    let rendimento =  Number(document.getElementById('rendimento').value);
+    let aporte =  Number(document.getElementById('aporte').value);
+    let periodo =  Number(document.getElementById('periodo').value);
     let valorFinal = 0;
     let i = 1
+    let registroResultado = [];
 
     valorFinal = Number(valorInicial * rendimento + aporte);
     console.log(`Após 1 período o valor é de R$${valorFinal}`);
@@ -42,7 +43,11 @@ function juroscompcalc() {
     while (i < periodo){
     ++i;
     valorFinal = Number(valorFinal * rendimento + aporte);
-    console.log(`Após ${i} períodos o valor é de R$${valorFinal.toFixed(2)}`);
-    // terminar implementação
+    valorRegistro = valorFinal.toFixed(2)
+    registroResultado.push(`R$${valorRegistro}<br>`)
+    console.log(registroResultado);
+    }
+    document.getElementById(`jurosResultado`).innerHTML = registroResultado;
+}
 
-    }}
+

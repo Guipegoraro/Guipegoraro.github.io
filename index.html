@@ -17,7 +17,7 @@
     <article id="presentation">
       Sou estudante de engenharia de software no
       <a href="https://www.infnet.edu.br/infnet/home/">Instituto Infnet</a>,
-      estou no primeiro trimeste e esse é o meu primeiro site!<br />Tenho 25
+      estou no primeiro trimestre e esse é o meu primeiro site!<br />Tenho 25
       anos, trabalho atualmente em um
       <a href="https://www.instagram.com/chicocaldodecana/">caldo de cana</a> e
       apesar de adorar o contato com o público estou muito ansioso para começar
@@ -57,6 +57,32 @@
         <p id="consumoResultado"></p>
       </form>
       </details>
+      <!-- Calculadora de Juros compostos -->
+        <details>
+          <summary>Calculadora de juros compostos. <STRONG>[EM CONSTRUÇÃO]</STRONG></summary>
+       <p>
+        <strong>Calcule juros compostos, resultado por período.<br>
+        </strong>
+        aporte = valor adicional a cada período. <br>
+        rendimento em porcentagem e por período.
+      </p>
+      <form>
+        <!--  valor inicial entrada -->
+        <label for="valorInicial">Valor Inicial</label>
+        <input type="number" id="valorInicial" name="valorInicial"/><br>
+        <!--  rendimento entrada -->
+        <label for="rendimento">Rendimento</label>
+        <input type="number" id="rendimento" name="rendimento"/><br>
+        <!--  aporte entrada -->
+        <label for="aporte">Aporte</label>
+        <input type="number" id="aporte" name="aporte"/><br>
+        <!--  periodo entrada -->
+        <label for="periodo">Período</label>
+        <input type="number" id="periodo" name="periodo"/><br>
+        <button type="button" onclick="juroscompcalc()">Resultado</button>
+        <p id="jurosResultado"></p>
+      </form>
+      </details>
     </div>
       <h4>
         Esse aqui é meu grande companheiro, o Tobby!<br> e apesar de ter uns 12 anos
@@ -69,9 +95,7 @@
         />
       </h4>
     </article>
-    <br>
-    <br>
-  <br> 
+    <br><br><br><br>
   <footer>
   <div id="adresses">
     <h4>Você quer me contratar?</h4>
