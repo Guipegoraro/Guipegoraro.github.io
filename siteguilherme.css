@@ -10,15 +10,6 @@ a {
 /*     border: 1px solid rgb(126, 126, 199); */
     box-sizing: border-box;
 }
-#adresses {
-    width: 500px;
-    height: 400px;
-    box-sizing: border-box;
-}
-#adresses {
-    width: 500px;
-    height: 400px;
-}
 #jurosResultado{
     overflow-y: scroll;
     width: 400px;
