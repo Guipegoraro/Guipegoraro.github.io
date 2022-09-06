@@ -39,12 +39,13 @@ function juroscompcalc() {
 
     valorFinal = Number(valorInicial * rendimento + aporte);
     console.log(`Após 1 período o valor é de R$${valorFinal}`);
+    registroResultado.push(`Após 1 período o valor é de R$${valorFinal}<br>`)
 
     while (i < periodo){
     ++i;
     valorFinal = Number(valorFinal * rendimento + aporte);
     valorRegistro = valorFinal.toFixed(2)
-    registroResultado.push(`R$${valorRegistro}<br>`)
+    registroResultado.push(`Após ${i} períodos o valor é de R$${valorRegistro}<br>`)
     console.log(registroResultado);
     }
     document.getElementById(`jurosResultado`).innerHTML = registroResultado;

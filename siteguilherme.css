@@ -18,8 +18,10 @@ a {
 #adresses {
     width: 500px;
     height: 400px;
-    box-sizing: border-box;
 }
 #jurosResultado{
-    overflow: 30px scroll;
+    overflow-y: scroll;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(225, 220, 173)
 } /* TESTANDO LISTA COM SCROLL */
