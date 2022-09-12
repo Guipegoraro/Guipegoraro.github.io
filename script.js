@@ -30,25 +30,26 @@ function gasOuAlc() {
 
 function juroscompcalc() {
     let valorInicial =  Number(document.getElementById('valorInicial').value);
-    let rendimento =  Number(document.getElementById('rendimento').value);
+    let rendimento =  Number(document.getElementById('rendimento').value) / 100;
     let aporte =  Number(document.getElementById('aporte').value);
     let periodo =  Number(document.getElementById('periodo').value);
     let valorFinal = 0;
-    let i = 1
+    let i = 1;
     let registroResultado = [];
 
-    valorFinal = Number(valorInicial * rendimento + aporte);
+    valorFinal = valorInicial * (1 + rendimento) + aporte;
     console.log(`Após 1 período o valor é de R$${valorFinal}`);
-    registroResultado.push(`Após 1 período o valor é de R$${valorFinal}<br>`)
+    registroResultado.push(`Após 1 período o valor é de R$${valorFinal}`);
 
     while (i < periodo){
     ++i;
-    valorFinal = Number(valorFinal * rendimento + aporte);
-    valorRegistro = valorFinal.toFixed(2)
-    registroResultado.push(`Após ${i} períodos o valor é de R$${valorRegistro}<br>`)
-    console.log(registroResultado);
+    valorFinal = valorFinal * (1 + rendimento) + aporte;
+    valorRegistro = valorFinal.toFixed(2);
+    registroResultado.push(`Após ${i} períodos o valor é de R$${valorRegistro}`);
     }
-    document.getElementById(`jurosResultado`).innerHTML = registroResultado;
+    console.log(registroResultado);
+    document.getElementById(`jurosResultado`).innerHTML = registroResultado.join("<br>");
+
 }
 
 
