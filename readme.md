@@ -9,8 +9,7 @@ what i did (that is worth mentioning):
 
 what i want to do:
 - add different fonts and colors
-- add new functions like the combustle calculator
 - maybe add a list with the values of all cars available in brazil? idk might be hard tho
 - add an animation to "site do guilherme pegoraro"
-- translate everything to english and find a way for the user to alternate between idioms
+- translate everything to english and find a way for the user to alternate between languages
 - add more stuff to add
