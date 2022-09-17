@@ -13,3 +13,4 @@ what i want to do:
 - add an animation to "site do guilherme pegoraro"
 - translate everything to english and find a way for the user to alternate between languages
 - add more stuff to add
+- adicionar destaque ao cartao ao apertar botao
