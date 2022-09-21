@@ -24,7 +24,7 @@ function gasOuAlc() {
     abastecerResultado = `Gasolina está valendo mais! você roda ${rodagemAlcool.toFixed(2)}km no alcool e ${rodagemGasolina.toFixed(2)}km rodando na gasolina!`
     document.getElementById('consumoResultado').innerHTML = abastecerResultado;
 }
-
+}
 // Calculadora de Juros composto
 
 function juroscompcalc() {
@@ -50,4 +50,4 @@ function juroscompcalc() {
     console.log(registroResultado);
     document.getElementById(`jurosResultado`).innerHTML = registroResultado.join("<br>");
 
-}}
+}
