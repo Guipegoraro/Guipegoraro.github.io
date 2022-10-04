@@ -7,6 +7,9 @@ details summary {
 a {
     text-decoration: none;
 }
+details {
+    cursor: pointer;
+}
 #presentation {
     width: 1000px;
     height: 240px;

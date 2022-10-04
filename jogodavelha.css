@@ -1,0 +1,17 @@
+  .tile_row {
+      float: left;
+      width: 100%;
+  }
+.chamada {
+    color: rgb(255, 0, 0);
+  }
+  
+  .tile {
+      float: left;
+      width: 80px;
+      height: 80px;
+      background-color: #e68439;
+      margin: 5px;
+      cursor: pointer;
+  }
+  

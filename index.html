@@ -7,6 +7,7 @@
   <title>Guilherme Cunha Pegoraro</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="fonts.css" rel="stylesheet" type="text/css" />
+  <link href="jogodavelha.css" rel="stylesheet" type="text/css" />
   <script src="testes.js"></script>
   <script src="script.js"></script>
   <!--     <script src="typescript.ts"></script> -->
@@ -87,6 +88,35 @@
           <p id="jurosResultado"></p>
         </form>
       </details>
+      <details>
+        <summary>Jogo da velha</summary>
+        <div>
+          <h1>Jogo da Velha</h1>
+          <h2>Jogador da vez: <span id="JogadorDaVez"></span></h2>
+          <h3 class="chamada">Pontos jogador X: <span  id="jogadorX">0</span><br> pontos jogador O: <span id="jogadorO">0</span> </h3>
+          <h3 class="chamada" id="vitoriaUsuario"></h3><br>
+          <h4>Vitórias com até 4 jogadas valem 2 pontos.</h4>
+          <button onclick="reiniciarJogo()">Reiniciar jogo</button>
+      </div>
+      <div>
+          <div class="tile_row">
+              <span onclick="marcarCasa(1)" id="casa1" class="tile"></span>
+              <span onclick="marcarCasa(2)" id="casa2" class="tile"></span>
+              <span onclick="marcarCasa(3)"  id="casa3" class="tile"></span>
+          </div>
+          <div class="tile_row">
+              <span onclick="marcarCasa(4)"  id="casa4" class="tile"></span>
+              <span onclick="marcarCasa(5)"  id="casa5" class="tile"></span>
+              <span onclick="marcarCasa(6)"  id="casa6" class="tile"></span>
+          </div>
+          <div class="tile_row">
+              <span onclick="marcarCasa(7)"  id="casa7" class="tile"></span>
+              <span onclick="marcarCasa(8)"  id="casa8" class="tile"></span>
+              <span onclick="marcarCasa(9)"  id="casa9" class="tile"></span>
+          </div>
+          <a href="index.html">clique aqui para reiniciar jogo e pontuação.</a>
+      </div>
+      </details>
     </div>
   </div>
     <div class="card">
@@ -104,6 +134,7 @@
         </address>
       </footer></div>
       <script src="script.js"></script>
+      <script src="jogodavelha.js"></script>
 </body>
 
 </html>
